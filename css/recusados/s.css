@@ -18,10 +18,16 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 
-@import url(superslides.css);/* TAMANHO E <> SLIDE*/
-@import url(bootstrap-select.css);/*BOTAO BRL*/
-@import url(owl.carousel.min.css);/*INSTAGRAN SLIDE*/
-@import url(baguetteBox.min.css);/*BOTAO NO FINAL QUE APARECE DO NADA*/
+@import url(all.css);
+@import url(superslides.css);
+@import url(bootstrap-select.css);
+@import url(carousel-ticker.css);
+@import url(code_animate.css);
+@import url(bootsnav.css);
+@import url(owl.carousel.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+@import url(baguetteBox.min.css);
 
 /*------------------------------------------------------------------
     SKELETON
@@ -459,10 +465,10 @@
      font-weight: 700;
      font-size: 16px;
      color: #010101;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     padding-left: 5px;
-     padding-right: 20px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 10px;
+     padding-right: 30px;
 }
  nav.navbar.bootsnav ul.nav li.active > a{
      color: #000000;
@@ -627,7 +633,7 @@
      background: #ffffff;
      
 }
-/* .main-header.fixed-menu {
+ .main-header.fixed-menu {
      position: fixed;
      left: 0px;
      top: 0px;
@@ -670,7 +676,7 @@
      box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.12);
      border-radius: 0;
 
-}*/
+}
  .top-search .input-group-addon{
      line-height: 40px;
 }
@@ -1038,7 +1044,7 @@
         
   }
   .gallery .item {
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     text-align: center;
     background: transparent;
@@ -1492,8 +1498,7 @@
      opacity: 1;
 }
 /*------------------------------------------------------------------ Footer Main -------------------------------------------------------------------*/
-/*FOOTER ANTIGO
-.footer-main{
+ .footer-main{
      padding: 70px 0px;
      background: #000000;
 }
@@ -1641,192 +1646,7 @@
 }
  .footer-link-contact ul li p a:hover{
      color: #000000;
-}*/
-/*FOOTER NOVO*/
-
-
-.footer-distributed{
-	background: rgb(255, 255, 255);
-	box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
 }
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #000000;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  rgb(0, 0, 0);
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #000000;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-	color:  #222;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-.footer-distributed .footer-center i{
-	background-color:  #ffffff;
-	color: #000000;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #000000;
-  font-weight:400;
-	vertical-align: middle;
-	margin:0;
-}
-
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-	color:  rgb(0, 0, 0);
-	text-decoration: none;;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: rgb(0, 0, 0);
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #000000;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #000000;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #ffffff;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #000000;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
-
 /*------------------------------------------------------------------ Copyright -------------------------------------------------------------------*/
  .footer-copyright{
      background: #000000;
