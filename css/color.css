@@ -694,11 +694,8 @@ p {
   height  : 100%;
   position: relative;
   z-index : 2;
-
-  border         : solid;
   background-size: cover;
-  border-radius  : 5px;
-}
+  }
 
 .gallery .item {
   height    : 400px;
@@ -729,9 +726,7 @@ p {
 
 /*------------------------------------------------------------------ Categories Shop -------------------------------------------------------------------*/
 .categories-shop {
-  border         : solid;
   background-size: cover;
-  border-radius  : 5px;
 }
 
 .categories-shop {
@@ -809,9 +804,6 @@ p {
 .products-box {
   padding        : 30px 0px;
   margin         : 0 0 1rem;
-  border         : solid;
-  background-size: cover;
-  border-radius  : 5px;
 }
 
 .special-menu {
@@ -1063,9 +1055,8 @@ p {
   padding   : 30px 0px;
   background: #ffffff;
   margin: 0 0 1rem;
-  border         : solid;
   background-size: cover;
-  border-radius  : 5px;
+
 }
 
 .blog-box {
@@ -1173,10 +1164,8 @@ p {
   background-size        : cover;
   position               : relative;
   margin                 : 0 0 1rem;
-
-  border         : solid;
   background-size: cover;
-  border-radius  : 5px;
+
 }
 
 .instagram-box::before {
